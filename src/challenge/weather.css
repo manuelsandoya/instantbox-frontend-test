@@ -1,0 +1,92 @@
+:root {
+  --bg-card: #1e3a5f;
+  --bg-header: #16305a;
+  --bg-stats: #16305a;
+  --bg-forecast: #243f6a;
+  --bg-forecast-active: #3b6faa;
+  --color-city: #ffffff;
+  --color-country: #7eb8f7;
+  --color-date: #7eb8f7;
+  --color-temp: #ffffff;
+  --color-unit: #7eb8f7;
+  --color-condition: #c5deff;
+  --color-stat-label: #7eb8f7;
+  --color-stat-value: #ffffff;
+  --color-day-name: #7eb8f7;
+  --color-day-temp: #ffffff;
+  --border-radius-card: 20px;
+  --border-radius-stat: 10px;
+  --border-radius-forecast: 12px;
+}
+
+body {
+}
+
+.weather-widget {
+}
+
+.weather-header {
+}
+
+.location {
+}
+
+.city {
+}
+
+.country {
+}
+
+.date-label {
+}
+
+.weather-main {
+}
+
+.temp-block {
+}
+
+.temp-value {
+}
+
+.temp-unit {
+}
+
+.condition-block {
+}
+
+.condition-icon {
+}
+
+.condition-text {
+}
+
+.weather-stats {
+}
+
+.stat {
+}
+
+.stat-label {
+}
+
+.stat-value {
+}
+
+.forecast-row {
+}
+
+.forecast-day {
+}
+
+.forecast-day.active {
+}
+
+.day-name {
+}
+
+.day-icon {
+}
+
+.day-temp {
+}

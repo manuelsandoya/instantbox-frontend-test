@@ -1,120 +1,69 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+/**
+ * Recruitment challenge: markup mirrors CSS Daily starter HTML (2026-03-13).
+ * Do not change structure or text — implement styling in src/challenge/weather.css only.
+ */
+import './challenge/weather.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <div className="weather-widget">
+      <div className="weather-header">
+        <div className="location">
+          <span className="city">San Francisco</span>
+          <span className="country">US</span>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+        <div className="date-label">Friday, Mar 13</div>
+      </div>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+      <div className="weather-main">
+        <div className="temp-block">
+          <span className="temp-value">64</span>
+          <span className="temp-unit">°F</span>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+        <div className="condition-block">
+          <div className="condition-icon">⛅</div>
+          <div className="condition-text">Partly Cloudy</div>
         </div>
-      </section>
+      </div>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <div className="weather-stats">
+        <div className="stat">
+          <span className="stat-label">Humidity</span>
+          <span className="stat-value">72%</span>
+        </div>
+        <div className="stat">
+          <span className="stat-label">Wind</span>
+          <span className="stat-value">14 mph</span>
+        </div>
+        <div className="stat">
+          <span className="stat-label">UV Index</span>
+          <span className="stat-value">3</span>
+        </div>
+      </div>
+
+      <div className="forecast-row">
+        <div className="forecast-day">
+          <span className="day-name">SAT</span>
+          <span className="day-icon">🌧️</span>
+          <span className="day-temp">58°</span>
+        </div>
+        <div className="forecast-day">
+          <span className="day-name">SUN</span>
+          <span className="day-icon">☀️</span>
+          <span className="day-temp">71°</span>
+        </div>
+        <div className="forecast-day">
+          <span className="day-name">MON</span>
+          <span className="day-icon">🌤️</span>
+          <span className="day-temp">68°</span>
+        </div>
+        <div className="forecast-day active">
+          <span className="day-name">TUE</span>
+          <span className="day-icon">⛈️</span>
+          <span className="day-temp">55°</span>
+        </div>
+      </div>
+    </div>
   )
 }
 
