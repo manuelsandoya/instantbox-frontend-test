@@ -1,6 +1,6 @@
 /**
- * Recruitment challenge: markup mirrors CSS Daily starter HTML (2026-03-13).
- * Do not change structure or text — implement styling in src/challenge/weather.css only.
+ * InstantBox challenge: fixed markup — do not change structure or text.
+ * Implement styling in src/challenge/weather.css only.
  */
 import './challenge/weather.css'
 

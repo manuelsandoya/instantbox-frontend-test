@@ -1,6 +1,6 @@
-# Weather forecast widget (CSS challenge)
+# InstantBox — Weather forecast widget challenge
 
-This repository exists **only** for the [CSS Daily — Weather Forecast Widget](https://cssdaily.dev/challenge/2026-03-13/)–style front-end exercise. React and Vite are a thin shell; **your work is plain CSS** matching the provided target design.
+This repository is **only** for the **InstantBox** front-end exercise: build a weather forecast widget from fixed markup so it matches the provided reference image. React and Vite are a thin shell; **your work is plain CSS** matching that design.
 
 ## Get the project
 
@@ -23,7 +23,7 @@ cd instantbox-frontend-test
 
 ## Objective
 
-Recreate the **weather forecast widget** so it matches the reference image **`public/challenge-target.png`** (same asset as on [CSS Daily](https://cssdaily.dev/targets/2026-03-13.png)).
+Recreate the **weather forecast widget** so it matches the reference image **`public/challenge-target.png`**.
 
 - **Do not** change the markup in `src/App.tsx`.
 - Implement the look by editing **`src/challenge/weather.css` only** (variables and selectors are provided; you fill in the styles).
