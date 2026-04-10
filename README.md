@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# Weather forecast widget (CSS challenge)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository exists **only** for the [CSS Daily — Weather Forecast Widget](https://cssdaily.dev/challenge/2026-03-13/)–style front-end exercise. React and Vite are a thin shell; **your work is plain CSS** matching the provided target design.
 
-Currently, two official plugins are available:
+## Get the project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Clone with Git
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone <YOUR-REPO-URL>
+cd instantbox-frontend-test
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Replace `<YOUR-REPO-URL>` with the HTTPS or SSH URL your organization gives you (for example `https://github.com/your-org/instantbox-frontend-test.git`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Download as a ZIP (no Git)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+On GitHub (or your host): open the repository page → **Code** → **Download ZIP**. Unzip the folder, then in a terminal:
+
+```bash
+cd instantbox-frontend-test
 ```
+
+## Objective
+
+Recreate the **weather forecast widget** so it matches the reference image **`public/challenge-target.png`** (same asset as on [CSS Daily](https://cssdaily.dev/targets/2026-03-13.png)).
+
+- **Do not** change the markup in `src/App.tsx`.
+- Implement the look by editing **`src/challenge/weather.css` only** (variables and selectors are provided; you fill in the styles).
+- There is **no time limit**; you are judged on the **final visual result** and sensible CSS, not speed.
+
+More detail: **[CHALLENGE.md](CHALLENGE.md)**.
+
+## Run locally
+
+Requirements: **Node.js** (LTS recommended) and **npm**.
+
+```bash
+npm install
+npm run dev
+```
+
+The dev server runs on port **5175** (see `vite.config.ts`). Open the URL shown in the terminal.
+
+## Checks before you submit
+
+```bash
+npm run build
+npm run lint
+```
+
+Both should complete without errors.
