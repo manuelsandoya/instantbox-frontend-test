@@ -17,3 +17,7 @@ This is the **InstantBox** front-end exercise: implement the widget styling to m
 
 - `npm run build`
 - `npm run lint`
+
+## Submit
+
+Open a **pull request** to this repository with your changes (see **[README.md](README.md)** for the fork/branch/PR steps). That is how your solution is reviewed.
